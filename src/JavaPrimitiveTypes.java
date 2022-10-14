@@ -70,5 +70,10 @@ public class JavaPrimitiveTypes {
 
         System.out.println(myTrueBooleanValue);
         System.out.println(myFalseBooleanValue);
+
+        //String datatype
+        //strings in java is immutable. string doesn't append the value instead creates a new sting.
+        String myString = "This is my string";
+        System.out.println(myString);
     }
 }
