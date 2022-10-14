@@ -21,7 +21,7 @@ public class JavaPrimitiveTypes {
         System.out.println("Byte maximum value is: " + myMaxByteValue); //127
 
         //Short primitive type
-        short ShortValue = 32767;
+        short shortValue = 32767;
         short myMinShortValue = Short.MIN_VALUE;
         short myMaxShortValue = Short.MAX_VALUE;
 
@@ -36,6 +36,26 @@ public class JavaPrimitiveTypes {
         System.out.println("Long minimum value is: " + myMinLongValue); //-9223372036854775808
         System.out.println("Long maximum value is: " + myMaxLongValue); //9223372036854775807
 
+        long longVariable = 50000L + (10L * (byteValue + shortValue + intValue));
+        System.out.println(longVariable);
+
+        //float (single precision) primitive type.
+
+        float myMinFloatValue = Float.MIN_VALUE;//1.4E-45
+        float myMaxFloatValue = Float.MAX_VALUE;//3.4028235E38
+
+        System.out.println("Float minimum value is: " + myMinFloatValue);
+        System.out.println("Float maximum value is: " + myMaxFloatValue);
+
+        //Double (double precision) primitive type
+
+        double myMinDoubleValue = Double.MIN_VALUE;
+        double myMaxDoubleValue = Double.MAX_VALUE;
+
+        System.out.println("Double minimum value is: " + myMinDoubleValue); //4.9E-324
+        System.out.println("Double maximum value is: " + myMaxDoubleValue); //1.7976931348623157E308
+
+        //
 
 
 
