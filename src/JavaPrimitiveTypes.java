@@ -55,11 +55,20 @@ public class JavaPrimitiveTypes {
         System.out.println("Double minimum value is: " + myMinDoubleValue); //4.9E-324
         System.out.println("Double maximum value is: " + myMaxDoubleValue); //1.7976931348623157E308
 
-        //
+        //Char primitive types
+        //single character value
+        // 16 bits memory
 
+        char myChar = 'c';
 
+        System.out.println(myChar);
 
+        //Boolean primitive type
 
+        boolean myTrueBooleanValue = true;
+        boolean myFalseBooleanValue = false;
 
+        System.out.println(myTrueBooleanValue);
+        System.out.println(myFalseBooleanValue);
     }
 }
