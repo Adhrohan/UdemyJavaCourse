@@ -73,7 +73,46 @@ public class JavaPrimitiveTypes {
 
         //String datatype
         //strings in java is immutable. string doesn't append the value instead creates a new sting.
-        String myString = "This is my string";
+        String myString = "This is my string.";
         System.out.println(myString);
+
+        int topScore = 100;
+        if (topScore > 100){
+            System.out.println("You got the high score");
+        }
+        // And operand && //only returns when both conditions are true
+        int secondTopScore = 80;
+        if ((topScore > secondTopScore) && (topScore < 100)){
+            System.out.println("greater than second and less than 100");
+        }
+
+        //OR operand ||. // returns even if only or both condition are true.
+        if ((topScore > 90) || (secondTopScore <= 90)){
+            System.out.println("Either or both of the condition are true");
+        }
+
+        //ternary operator
+        boolean isCar = true;
+        boolean wasCar = isCar ? true : false;
+        if (wasCar == true){
+            System.out.println("This car is true");
+        }
+
+        int ageOfCustomer = 20;
+        boolean isTwentyOne = (ageOfCustomer < 21)? true : false;
+        if (isTwentyOne){
+            System.out.println("Customer is not allowed to buy");
+        }
+
+        double var1 = 20.00;
+        double var2 = 80.00;
+        double varResult = (var1 + var2) * 100;
+        double varRemainder = varResult % 40.00;
+        boolean isNoRemainder = (varRemainder == 0)? true : false;
+        System.out.println("isNoRemainder " + isNoRemainder);
+        if (!isNoRemainder){
+            System.out.println("Got some remainder");
+        }
+
     }
 }
