@@ -21,14 +21,15 @@ public class MethodExercise {
 
     //method to calculate high score position
     public static int calculateHighScorePosition(int playerScore){
+        int position = 4;
         if (playerScore >= 1000){
-            return 1;
-        } else if (playerScore < 1000 && playerScore >= 500) {
-            return 2;
-        } else if (playerScore < 500 && playerScore >= 100) {
-            return 3;
-        }else {
-            return 4;
+            position = 1;
+        } else if (playerScore >= 500) {
+            position = 2;
+        } else if (playerScore >= 100) {
+            position = 3;
         }
+        return position;
+
     }
 }
