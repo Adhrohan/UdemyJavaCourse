@@ -9,5 +9,32 @@ public class main {
         calculator.setSecondNumber(0);
         System.out.println("multiply= " + calculator.getMultiplicationResult());
         System.out.println("divide= " + calculator.getDivisionResult());
+
+        BankAccount bankAccount = new BankAccount(12345,100,"yogesh","abc@gmail.com","12345");
+        bankAccount.setAccountNumber(12345678);
+        bankAccount.setCustomerName("Yogesh Adhikari");
+        bankAccount.setCustomerEmail("yogeshadhikari@gmail.com");
+        bankAccount.setBalance(123);
+        bankAccount.setPhoneNumber("1234567890");
+
+        System.out.println(bankAccount.depositFund(123));
+        System.out.println(bankAccount.withdrawFund(123));
+        System.out.println(bankAccount.getAccountNumber());
+        System.out.println(bankAccount.getCustomerName());
+
+        VipCustomer vipCustomer = new VipCustomer();
+        System.out.println(vipCustomer.getName());
+        System.out.println(vipCustomer.getCreditLimit());
+
+        VipCustomer vipCustomer1 = new VipCustomer("yogesh","gmail.com");
+        System.out.println(vipCustomer1.getEmail());
+        System.out.println(vipCustomer1.getName());
+
+        VipCustomer vipCustomer2 = new VipCustomer();
+        System.out.println(vipCustomer2.getName());
+        System.out.println(vipCustomer2.getCreditLimit());
+        System.out.println(vipCustomer2.getEmail());
+
+
     }
 }
